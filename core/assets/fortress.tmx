@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="23" height="15" tilewidth="48" tileheight="48">
+ <tileset firstgid="1" name="StationTileset" tilewidth="48" tileheight="48" spacing="2">
+  <image source="StationTileset.png" trans="ff00ff" width="200" height="150"/>
+ </tileset>
+ <tileset firstgid="13" name="Marker" tilewidth="48" tileheight="48">
+  <image source="Marker.png" trans="ff00ff" width="48" height="48"/>
+ </tileset>
+ <layer name="Game" width="23" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAfsBDAlAB8+ullNiOJNKlmE4vJMZsbj1oQ4Bl196i7R91NlLvxicP048MAV50BbQ==
+  </data>
+ </layer>
+ <layer name="Marker" width="23" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFuAAvDj4u8VEwCkbB0AW8DKTleWLzPQDzdACD
+  </data>
+ </layer>
+</map>
