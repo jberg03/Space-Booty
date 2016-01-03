@@ -22,6 +22,7 @@ public class Play implements Screen {
     private TiledMapTileLayer gameLayer;
     private TiledMapTileLayer markerLayer;
     private TiledMap tiledMap;
+    private TiledMapTileLayer.Cell[] cell;
 
     @Override
     public void render(float delta) {
@@ -58,8 +59,9 @@ public class Play implements Screen {
         markerLayer = (TiledMapTileLayer)tiledMap.getLayers().get("Marker");
         int column = markerLayer.getWidth();
         int row = markerLayer.getHeight();
-        TiledMapTileLayer.Cell cell = markerLayer.getCell(column, row);
+        cell = new TiledMapTileLayer.Cell[0];
 
+        //Create the renderer
         float unitScale = 1f / 48f;
         renderer = new OrthogonalTiledMapRenderer(tiledMap, unitScale);
     }
