@@ -4,12 +4,15 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Batch;
+import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+import com.badlogic.gdx.utils.Array;
 
 /**
  * Space-Booty
@@ -22,7 +25,11 @@ public class Play implements Screen {
     private TiledMapTileLayer gameLayer;
     private TiledMapTileLayer markerLayer;
     private TiledMap tiledMap;
-    private TiledMapTileLayer.Cell[] cell;
+    private Array <TiledMapTileLayer.Cell> cell;
+    private boolean levelCreation = false;
+
+    Sprite background;
+    Texture tex;
 
     @Override
     public void render(float delta) {
@@ -31,11 +38,20 @@ public class Play implements Screen {
 
         camera.setToOrtho(false, 23, 15);
 
-        batch.setProjectionMatrix(camera.combined);
+        //batch.setProjectionMatrix(camera.combined);
+
+        batch.begin();
+            background.draw(batch);
+        batch.end();
+
         renderer.setView(camera);
 
         renderer.getSpriteBatch().begin();
         renderer.renderTileLayer(gameLayer);
+
+        if(levelCreation)
+            renderer.renderTileLayer(markerLayer);
+
         renderer.getSpriteBatch().end();
     }
 
@@ -56,14 +72,26 @@ public class Play implements Screen {
         gameLayer = (TiledMapTileLayer)tiledMap.getLayers().get("Game");
 
         //Create the Marker layer
-        markerLayer = (TiledMapTileLayer)tiledMap.getLayers().get("Marker");
-        int column = markerLayer.getWidth();
-        int row = markerLayer.getHeight();
-        cell = new TiledMapTileLayer.Cell[0];
+        markerLayer = (TiledMapTileLayer)tiledMap.getLayers().get("Markers");
+
+        cell = new Array<TiledMapTileLayer.Cell>();
+        cell.add(markerLayer.getCell(2, 3));
+        cell.add(markerLayer.getCell(6, 3));
+        cell.add(markerLayer.getCell(8, 3));
+        cell.add(markerLayer.getCell(12, 3));
+        cell.add(markerLayer.getCell(1, 14));
+        cell.add(markerLayer.getCell(2, 14));
+        cell.add(markerLayer.getCell(6, 14));
+        cell.add(markerLayer.getCell(8, 14));
+        cell.add(markerLayer.getCell(12, 14));
+        cell.add(markerLayer.getCell(13, 14));
 
         //Create the renderer
         float unitScale = 1f / 48f;
         renderer = new OrthogonalTiledMapRenderer(tiledMap, unitScale);
+
+        tex = new Texture("background.png");
+        background = new Sprite(tex);
     }
 
     @Override

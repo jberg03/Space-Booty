@@ -6,14 +6,17 @@
  <tileset firstgid="13" name="Marker" tilewidth="48" tileheight="48">
   <image source="Marker.png" trans="ff00ff" width="48" height="48"/>
  </tileset>
+ <tileset firstgid="14" name="GUIBackground" tilewidth="48" tileheight="48">
+  <image source="GUIBackground.png" trans="ff00ff" width="48" height="48"/>
+ </tileset>
  <layer name="Game" width="23" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYCAfsBDAlAB8+ullNiOJNKlmE4vJMZsbj1oQ4Bl196i7R91NlLvxicP048MAV50BbQ==
+   eJzVklsKgFAIRH30V/tfbwQKMt2MlBslyIjocBCJ6rHcZCey/be82VRBGVQK3mr7McVUQSveazJ7xNbwRs4r/qfePJFb6HzXP3BH1ljLoD+Lu/vfXo+Yv3Zv54zM3o//gzfJcgfRXQGj
   </data>
  </layer>
- <layer name="Marker" width="23" height="15">
+ <layer name="Markers" width="23" height="15" visible="0" opacity="0.73">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFuAAvDj4u8VEwCkbB0AW8DKTleWLzPQDzdACD
+   eJxjYBi8gA8HppfZvDj4uMRJMZtcMGr2qNmjZtPGbF4G0vI8uhguAAD78QTH
   </data>
  </layer>
 </map>
