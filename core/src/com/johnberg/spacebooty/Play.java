@@ -26,7 +26,7 @@ public class Play implements Screen {
     private TiledMapTileLayer markerLayer;
     private TiledMap tiledMap;
     private Array <TiledMapTileLayer.Cell> cell;
-    private boolean levelCreation = false;
+    private boolean levelCreation = true;
 
     Sprite background;
     Texture tex;
