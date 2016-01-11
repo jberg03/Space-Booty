@@ -3,20 +3,18 @@
  <tileset firstgid="1" name="StationTileset" tilewidth="48" tileheight="48" spacing="2">
   <image source="StationTileset.png" trans="ff00ff" width="200" height="150"/>
  </tileset>
- <tileset firstgid="13" name="Marker" tilewidth="48" tileheight="48">
-  <image source="Marker.png" trans="ff00ff" width="48" height="48"/>
- </tileset>
- <tileset firstgid="14" name="GUIBackground" tilewidth="48" tileheight="48">
-  <image source="GUIBackground.png" trans="ff00ff" width="48" height="48"/>
+ <tileset firstgid="13" name="Game" tilewidth="49" tileheight="64" spacing="2">
+  <tileoffset x="1" y="2"/>
+  <image source="Game.png" trans="ff00ff" width="512" height="64"/>
  </tileset>
  <layer name="Game" width="23" height="15">
   <data encoding="base64" compression="zlib">
    eJzVklsKgFAIRH30V/tfbwQKMt2MlBslyIjocBCJ6rHcZCey/be82VRBGVQK3mr7McVUQSveazJ7xNbwRs4r/qfePJFb6HzXP3BH1ljLoD+Lu/vfXo+Yv3Zv54zM3o//gzfJcgfRXQGj
   </data>
  </layer>
- <layer name="Markers" width="23" height="15" visible="0" opacity="0.73">
+ <layer name="Markers" width="23" height="15" opacity="0.73">
   <data encoding="base64" compression="zlib">
-   eJxjYBi8gA8HppfZvDj4uMRJMZtcMGr2qNmjZtPGbF4G0vI8uhguAAD78QTH
+   eJxjYBi8QAAHHjV71OxRs0fNHkxm4wMAoVgE4Q==
   </data>
  </layer>
 </map>

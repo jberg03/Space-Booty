@@ -1,0 +1,118 @@
+
+Game.png
+size: 499,62
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+BombMartian
+  rotate: false
+  xy: 2, 14
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+Bullet
+  rotate: false
+  xy: 452, 14
+  size: 4, 2
+  orig: 4, 2
+  offset: 0, 0
+  index: -1
+CannonBall
+  rotate: false
+  xy: 2, 2
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+CannonPirate
+  rotate: false
+  xy: 52, 14
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+CaptainBaldBeard
+  rotate: false
+  xy: 102, 14
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+GUIBackground
+  rotate: false
+  xy: 152, 14
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+Grenade
+  rotate: false
+  xy: 495, 58
+  size: 4, 4
+  orig: 4, 4
+  offset: 0, 0
+  index: -1
+GrenadeMartian
+  rotate: false
+  xy: 202, 14
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+Laser
+  rotate: false
+  xy: 467, 21
+  size: 4, 2
+  orig: 4, 2
+  offset: 0, 0
+  index: -1
+LaserPirate
+  rotate: false
+  xy: 252, 14
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+Marker
+  rotate: false
+  xy: 302, 14
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+Plasma
+  rotate: false
+  xy: 14, 8
+  size: 4, 4
+  orig: 4, 4
+  offset: 0, 0
+  index: -1
+PlasmaMartian
+  rotate: false
+  xy: 352, 14
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+RiflePirate
+  rotate: false
+  xy: 452, 25
+  size: 41, 37
+  orig: 41, 37
+  offset: 0, 0
+  index: -1
+RocketPirate
+  rotate: false
+  xy: 402, 14
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+SpaceBomb
+  rotate: false
+  xy: 452, 18
+  size: 13, 5
+  orig: 13, 5
+  offset: 0, 0
+  index: -1
